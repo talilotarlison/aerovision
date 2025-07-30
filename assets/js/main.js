@@ -114,7 +114,8 @@ function handleContactForm() {
             if (button.textContent.includes('ORÇAMENTO')) {
                 e.preventDefault();
                 // Here you would typically open a modal or redirect to a contact form
-                alert('Formulário de orçamento em desenvolvimento. Entre em contato pelo telefone (11) 99999-9999');
+                window.open("https://wa.me/+558699194446/?text=Gostaria de solicitar um orçamento para serviços de fotografia e filmagem aérea.", "_blank", "noopener,noreferrer");
+
             }
         });
     });
@@ -135,7 +136,7 @@ function addLoadingStates() {
             this.disabled = true;
             this.textContent = 'Carregando...';
             this.style.opacity = '0.7';
-
+            window.open("https://www.instagram.com/aerovision_pj?igsh=N2V6dmRscmNoeHpz", "_blank", "noopener,noreferrer");
             // Reset after 2 seconds (simulate loading)
             setTimeout(() => {
                 this.disabled = false;
@@ -224,4 +225,3 @@ function addScrollProgress() {
 document.addEventListener('DOMContentLoaded', addScrollProgress);
 
 
- 
