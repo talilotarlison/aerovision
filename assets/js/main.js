@@ -220,8 +220,40 @@ function addScrollProgress() {
     });
 }
 
+// Swiper no seu JS - garantir que só execute após o DOM estar pronto
+document.addEventListener('DOMContentLoaded', function() {
+  if (window.Swiper) {
+    new Swiper('.portfolio-swiper', {
+      slidesPerView: 1,
+      spaceBetween: 2, // Aproxima ainda mais os cards
+      loop: false,
+      loopedSlides: 4, // Garante que o Swiper sempre tenha slides para preencher
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      breakpoints: {
+        768: { slidesPerView: 2, spaceBetween: 4, loopedSlides: 6 }, // Aproxima ainda mais em telas médias
+        1200: { slidesPerView: 3, spaceBetween: 8, loopedSlides: 6 } // Aproxima ainda mais em telas grandes
+      }
+    });
+  }
+});
+
 
 // Initialize scroll progress
 document.addEventListener('DOMContentLoaded', addScrollProgress);
 
-
+// link portfolio items to Instagram
+document.addEventListener('DOMContentLoaded', () => {
+    const portfolioItems = document.querySelectorAll('.portfolio-item');
+    portfolioItems.forEach(item => {
+        item.addEventListener('click', () => {
+            window.open("https://www.instagram.com/aerovision_pj?igsh=N2V6dmRscmNoeHpz", "_blank", "noopener,noreferrer");
+        });
+    });
+});

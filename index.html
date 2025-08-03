@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="./assets/css/styles.css">
     <link rel="stylesheet" href="./assets/css/form.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </head>
 
 <body>
@@ -179,6 +180,73 @@
             </div>
         </div>
     </section>
+    <!-- sesao portifolio -->
+    <section class="portfolio" id="portfolio">
+        <h2 class="section-title">ALGUNS PROJETOS</h2>
+        <div class="swiper portfolio-swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="portfolio-item">
+                        <img src="assets/img/eventos/1.jpeg" alt="Trilha da Amizade">
+                        <div class="portfolio-info">
+                            <h3>Evento Trilha da Amizade</h3>
+                            <p>Cliente: Trilha da Amizade</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="portfolio-item">
+                        <img src="assets/img/eventos/2.jpeg" alt="Aniversário">
+                        <div class="portfolio-info">
+                            <h3>Aniversário com Cobertura Especial gdfddhhd</h3>
+                            <p>Cliente: Festa de Aniversário</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="portfolio-item">
+                        <img src="assets/img/eventos/3.jpeg" alt="Arquitetura e Construção Civil">
+                        <div class="portfolio-info">
+                            <h3>Arquitetura e Construção Civil</h3>
+                            <p>Cliente: Construtora</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="portfolio-item">
+                        <img src="assets/img/eventos/4.jpeg" alt="Casamento">
+                        <div class="portfolio-info">
+                            <h3>Registro de Casamento</h3>
+                            <p>Cliente: Noivos</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="portfolio-item">
+                        <img src="assets/img/eventos/5.jpeg" alt="Festa Cavalgada">
+                        <div class="portfolio-info">
+                            <h3>Festa de Cavalgada</h3>
+                            <p>Cliente: Calvagada </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="portfolio-item">
+                        <img src="assets/img/eventos/6.jpeg" alt="Festa Juninas">
+                        <div class="portfolio-info">
+                            <h3>Festa Junina Nordestina</h3>
+                            <p>Cliente: Festival</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Botões de navegação e paginação -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+
+    </section>
     <!-- sessao sobre so site -->
     <section class="about" id="sobre">
         <div class="container">
@@ -198,6 +266,7 @@
             </div>
         </div>
     </section>
+
     <!-- sessao de contatos -->
     <section class="contact" id="contato">
         <div class="container">
@@ -277,8 +346,15 @@
             </div>
         </div>
     </footer>
+    <!-- Botão de voltar ao topo -->
+    <button class="back-to-top" onclick="window.scrollTo({ top: 0, behavior: 'smooth' });" aria-label="Ir para o topo">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+    <!-- Swiper CSS -->
 
     <script type="module" src="/assets/js/main.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </body>
 
 </html>
