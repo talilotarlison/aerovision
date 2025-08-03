@@ -46,11 +46,13 @@ body {
     font-weight: 700;
     letter-spacing: 2px;
 }
+
 .logo img {
     width: 190px;
     height: auto;
     filter: brightness(0) invert(1);
      /* filter: brightness(0) invert(1) drop-shadow(0 0 10px #fa6630);  */
+     margin-left: -10px;
 }
 
 .header-content .logo img:hover {
