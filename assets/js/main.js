@@ -114,7 +114,7 @@ function handleContactForm() {
             if (button.textContent.includes('ORÇAMENTO')) {
                 e.preventDefault();
                 // Here you would typically open a modal or redirect to a contact form
-                window.open("https://wa.me/+558699194446/?text=Gostaria de solicitar um orçamento para serviços de fotografia e filmagem aérea.", "_blank", "noopener,noreferrer");
+                window.open("https://wa.me/+558699194446/?text=Olá, gostaria de solicitar um orçamento para o meu projeto.", "_blank", "noopener,noreferrer");
 
             }
         });
