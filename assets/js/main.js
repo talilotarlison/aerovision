@@ -221,13 +221,14 @@ function addScrollProgress() {
 }
 
 // Swiper no seu JS - garantir que só execute após o DOM estar pronto
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
   if (window.Swiper) {
     new Swiper('.portfolio-swiper', {
-      slidesPerView: 1,
-      spaceBetween: 2, // Aproxima ainda mais os cards
+      slidesPerView: 1, // Mostra 1 card por vez no mobile
+      spaceBetween: 2,
       loop: false,
-      loopedSlides: 4, // Garante que o Swiper sempre tenha slides para preencher
+      loopedSlides: 1,
+
       navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
@@ -236,13 +237,25 @@ document.addEventListener('DOMContentLoaded', function() {
         el: '.swiper-pagination',
         clickable: true,
       },
+
       breakpoints: {
-        768: { slidesPerView: 2, spaceBetween: 4, loopedSlides: 6 }, // Aproxima ainda mais em telas médias
-        1200: { slidesPerView: 3, spaceBetween: 8, loopedSlides: 6 } // Aproxima ainda mais em telas grandes
+        // Telas ≥768px: mostra 2 cards
+        768: {
+          slidesPerView: 2,
+          spaceBetween: 4,
+          loopedSlides: 2
+        },
+        // Telas ≥1200px: mostra 3 cards
+        1200: {
+          slidesPerView: 3,
+          spaceBetween: 8,
+          loopedSlides: 3
+        }
       }
     });
   }
 });
+
 
 
 // Initialize scroll progress

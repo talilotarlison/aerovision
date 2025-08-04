@@ -666,8 +666,13 @@ body {
     /* .quality-badge{
         display: none;
     } */
+    
     .back-to-top {
         display: none;
+    }
+    .swiper-slide {
+        flex-shrink: 0 !important;
+        width: 100% !important;
     }
 }
 
@@ -732,3 +737,4 @@ body {
 
 
 }
+

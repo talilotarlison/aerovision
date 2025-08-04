@@ -319,7 +319,8 @@ textarea::placeholder {
 }
 
 .swiper-slide {
-    flex-shrink: 3 !important;
+    flex-shrink: 1 !important;
+    width: 100% !important;
 }
 
 /* Swiper pagination bullets brancas */
@@ -341,4 +342,10 @@ textarea::placeholder {
 
 .swiper-wrapper {
     padding: 40px !important;
+}
+
+.portfolio-swiper,
+.swiper {
+    width: 100%;
+    overflow: hidden;
 }
